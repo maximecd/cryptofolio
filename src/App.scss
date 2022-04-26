@@ -13,28 +13,48 @@ body,
 
 .App {
   height: 100%;
-  max-width: 1200px; 
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-.coins{
-  width: 100%;
+.coins {
+  display: flex;
+  flex-direction: column;
 
+  .filter {
+    margin: 3em 0;
+    background: rgb(201, 201, 201);
+    padding: 1em;
+    gap: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5em;
+    label {
+      font-size: large;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    input {
+      border: none;
+      border-radius: 0.5em;
+      width: 12em;
+      padding: 0.5em;
+    }
+  }
 }
-
 
 .coins-table {
   width: 100%;
   border-collapse: separate; /* Not really necessary unless you use normalize.js */
   border-spacing: 0px; /* take out spaces between cells */
-  td{
+  td {
     padding: 1em;
   }
   thead {
     font-weight: bold;
   }
   tbody {
-    tr td{
+    tr td {
       border-top: 1px solid rgb(229, 229, 229);
     }
   }

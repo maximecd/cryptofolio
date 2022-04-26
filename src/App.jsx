@@ -28,7 +28,7 @@ function App() {
     <div className="App">
       <div className="coins">
         <div className="filter">
-          <label htmlFor="search">Rechecher :</label>
+          <label htmlFor="search">Filtrer  :</label>
           <input
             type="text"
             id="search"
