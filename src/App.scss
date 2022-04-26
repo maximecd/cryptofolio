@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.App {
+  height: 100%;
+  max-width: 1200px; 
+  margin: 0 auto;
+}
+
+.coins{
+  width: 100%;
+
+}
+
+
+.coins-table {
+  width: 100%;
+  border-collapse: separate; /* Not really necessary unless you use normalize.js */
+  border-spacing: 0px; /* take out spaces between cells */
+  td{
+    padding: 1em;
+  }
+  thead {
+    font-weight: bold;
+  }
+  tbody {
+    tr td{
+      border-top: 1px solid rgb(229, 229, 229);
+    }
+  }
+}
